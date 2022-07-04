@@ -1,0 +1,63 @@
+.footer-subscribe {
+    display: flex;
+    margin-left: 93px;
+}
+
+.subscribe-section__subscribe-text {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+    color: var(--text-accent);
+}
+
+.subscribe-section__subscribe-form-input {
+    box-sizing: border-box;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--background-color);
+    color: var(--text-accent);
+    margin-right: 12px;
+    padding-left: 16px;
+}
+.subscribe-section__subscribe-email-input{
+    display: flex;
+    
+}
+
+.subscribe-section__subscribe-form-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    background-color: var(--accent-color);
+    color: var(--text-accent);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    border: transparent;
+
+    &:hover,
+    &:focus {
+    background-color:var(--header-botom-color) ;
+}
+}
+
+.subscribe-section__subscribe-telegram-icon {
+margin-left: 10px;
+}
+
+
