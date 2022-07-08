@@ -81,7 +81,7 @@ width: 360px;
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
 .hero {
-    background-image: url('/images/images-hero/header-tablet-img@2x.jpg');
+    background-image: url('../images/images-hero/header-tablet-img@2x.jpg');
   
 }
 }
@@ -95,7 +95,7 @@ width: 360px;
     (min-resolution: 192dpi),
     (min-resolution: 2dppx){
         .hero {
-            background-image: url('/images/images-hero/header-desktop-img@2x.jpg');
+            background-image: url('../images/images-hero/header-desktop-img@2x.jpg');
           
         }
     }
