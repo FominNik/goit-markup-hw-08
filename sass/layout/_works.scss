@@ -1,49 +1,57 @@
-.section_no-padding-top {
-    padding-top: 0;
-   }
-   
 
-
-.works {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.works__picture:not(:nth-child(3n)) {
-    margin-right: 30px;
-}
-.works__picture {
-    flex-basis: calc((100% - 90px)/3);
+@media screen and (min-width: 1200px) {
+    .section_no-padding-top {
+        padding-top: 0;
+       }
+       
     
-}
- .works__box {
-    position: relative;
-}
-
- .works__description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1,14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--text-accent);
-    background: rgba(47, 48, 58, 0.8);
-    width: 370px;
-    height: 70px;
-    bottom: 0;
-    left: 0;
-    overflow: auto;
- }
- .section__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--text-font);
-    margin-bottom: 50px;
+    
+    .works {
+        display: flex;
+        flex-wrap: wrap;
     }
+    
+    .works__picture:not(:nth-child(3n)) {
+        margin-right: 30px;
+    }
+    .works__picture {
+        flex-basis: calc((100% - 90px)/3);
+        
+    }
+     .works__box {
+        position: relative;
+    }
+    
+     .works__description {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1,14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--text-accent);
+        background: rgba(47, 48, 58, 0.8);
+        width: 370px;
+        height: 70px;
+        bottom: 0;
+        left: 0;
+        overflow: auto;
+     }
+     .section__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--text-font);
+        margin-bottom: 50px;
+        }
+ }
+@media screen and (max-width: 1190px) {
+    .section-hidden {
+        display: none;
+    }
+}
