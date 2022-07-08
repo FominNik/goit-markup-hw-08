@@ -921,6 +921,11 @@ a {
     display: flex;
   }
 
+  .team-section__img {
+    width: 270px;
+    height: 260px;
+  }
+
   .team-section__item {
     flex-basis: calc((100% - 120px) / 4);
     height: 428px;
