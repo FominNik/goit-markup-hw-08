@@ -69,10 +69,11 @@
     @media screen and (min-width: 1200px) {
         .clients-list-example {
           display: flex;
-          
+          flex-wrap: nowrap;
              }
                 
          .clients-list-item {
+            
             width: 170px;
             height: 92px; 
             
