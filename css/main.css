@@ -605,7 +605,7 @@ a {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("/images/images-hero/header-desktop.jpg");
+    background-image: url("/images/images-hero/header-mobile-img@2x.jpg");
   }
 }
 .hero__title {
@@ -661,18 +661,18 @@ a {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/images-hero/header-tablet-img@2x.jpg");
+    background-image: url("/images/images-hero/header-tablet-img@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/images-hero/header-desktop.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/images-hero/header-desktop.jpg");
     max-width: 1600px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/images-hero/header-desktop-img@2x.jpg");
+    background-image: url("/images/images-hero/header-desktop-img@2x.jpg");
   }
 }
 .skills__text {
