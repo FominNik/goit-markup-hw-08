@@ -605,7 +605,7 @@ a {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("/images/images-hero/header-mobile-img@2x.jpg");
+    background-image: url("/images/images-hero/header-desktop.jpg");
   }
 }
 .hero__title {
