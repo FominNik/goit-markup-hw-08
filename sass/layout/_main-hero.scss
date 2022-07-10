@@ -16,13 +16,13 @@
 
 }
 
-@media (min-resolution: 2dppx){
-    .hero {
-        background-image: url(/images/images-hero/header-mobile-img@2x.jpg);
-    }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url('/images/images-hero/header-mobile-img@2x.jpg');
+  }
 }
- 
-
 
 .hero__title {
 font-weight: 900;
@@ -67,35 +67,39 @@ width: 360px;
 }
 
 @media screen and (min-width: 768px) {
-    @media (min-width: 489px){
-        .hero {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(/images/images-hero/header-tablet-img.jpg);
-        }
-        @media (min-resolution: 2dppx){
-            .hero {
-                background-image: url(/images/images-hero/header-tablet-img@2x.jpg);
-            }
-        }
-    }
+.hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url('/images/images-hero/header-tablet-img.jpg');
+    max-width: 768px;
+    font-size: 26px;
+}
 .hero__title {
     font-size: 44px;
     line-height: 1.36;
     width: 696px;
 }
-
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+.hero {
+    background-image: url('/images/images-hero/header-tablet-img@2x.jpg');
+  
+}
+}
 }
 @media screen and (min-width: 1200px) {
-   
-    @media (min-width: 1190px){
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url('/images/images-hero/header-desktop.jpg');
+        max-width: 1600px;
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
         .hero {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(/images/images-hero/header-desktop.jpg);
-        }
-        @media (min-resolution: 2dppx){
-            .hero {
-                background-image: url(/images/images-hero/header-desktop-img@2x.jpg);
-            }
+            background-image: url('/images/images-hero/header-desktop-img@2x.jpg');
+          
         }
     }
+     
 
 }
 

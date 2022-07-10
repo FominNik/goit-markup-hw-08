@@ -52,6 +52,7 @@
         .clients-list-item {
             height: 92px;
             flex-basis: calc((100% - 90px) / 3); 
+            
             &:not(:nth-child(n + 6)) {
                 margin-right: 30px;
             }
