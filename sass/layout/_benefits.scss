@@ -36,19 +36,19 @@
     height: 70px;
    
 }
+@media screen and (max-width: 767px) {
+    .skills {
+        gap: 30px;
+    } 
+
+}
 @media screen and (min-width: 768px) {
   
     .skills__item {
         flex-basis: calc((100% - 30px) / 2);
     
        
-        &:not(:nth-child(2n)) {
-            margin-right: 30px;
-        }
-        &:not(:nth-child(2n)) {
-            margin-bottom: 30px;
-        }
-    
+        
     }
     
 }
@@ -58,7 +58,17 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        
             
+    }
+    .skills__item {
+        &:not(:nth-child(2n)) {
+            margin-right: 30px;
+        }
+        &:not(:nth-child(2n)) {
+            margin-bottom: 30px;
+        }
+    
     }
 }
 

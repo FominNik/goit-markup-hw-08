@@ -1,4 +1,7 @@
-
+.section__title {
+    font-size: 28px;
+    line-height: 1.14;
+}
 .clients-list-link {
     width: 100%;
     height: 100%;
@@ -30,17 +33,13 @@
     .clients-list-example {
          display: flex;
          flex-wrap: wrap;
+         gap: 30px;
     }
     .clients-list-item {
-    
+        height: 92px;
         flex-basis: calc((100% - 30px) / 2); 
            
-        &:not(:nth-child(2n)) {
-            margin-right: 30px;
-        }
-        &:not(:nth-child(n + 5)) {
-            margin-bottom: 30px;
-        }
+    
     }    
     
    
@@ -50,16 +49,7 @@
    
     @media screen and (min-width: 768px) {
         .clients-list-item {
-            height: 92px;
-            flex-basis: calc((100% - 90px) / 3); 
-            
-            &:not(:nth-child(n + 6)) {
-                margin-right: 30px;
-            }
-            &:not(:nth-child(n + 3)) {
-                margin-bottom: 30px;
-            }
-                  
+            flex-basis: calc((100% - 60px) / 3);  
         }
        
        
@@ -78,10 +68,7 @@
             width: 170px;
             height: 92px; 
             
-             &:not(:last-child) {
-              margin-right: 30px;
-                }
-                   
+           
             }
     }
 

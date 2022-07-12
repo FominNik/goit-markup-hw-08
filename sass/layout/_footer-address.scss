@@ -67,14 +67,24 @@ font-style: normal;
         margin-bottom: 8px;
     
 }
+@media screen and (max-width: 767px) {
+    .footer-adress {
+        margin-bottom: 60px; 
+}
+.footer-media {
+    margin-bottom: 60px;
+}
+}
 
 @media screen and (min-width: 768px) and (max-width: 1199px){
-    .footer-media {
-        margin-left: 165px;
-    }
+    
     .flex-container {
         justify-content: space-around;
         flex-wrap: wrap;
+        align-items: baseline;
+    }
+    .footer-subscribe {
+        margin-top: 60px;
     }
     
         
