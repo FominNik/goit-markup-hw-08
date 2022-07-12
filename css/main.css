@@ -689,18 +689,18 @@ a {
   .skills__item {
     flex-basis: calc((100% - 30px) / 2);
   }
+  .skills__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+  .skills__item:not(:nth-child(2n)) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .skills__item:not(:nth-child(2n)) {
-    margin-right: 30px;
-  }
-  .skills__item:not(:nth-child(2n)) {
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {

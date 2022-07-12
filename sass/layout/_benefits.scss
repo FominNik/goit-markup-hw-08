@@ -50,6 +50,15 @@
        
         
     }
+    .skills__item {
+        &:not(:nth-child(2n)) {
+            margin-right: 30px;
+        }
+        &:not(:nth-child(2n)) {
+            margin-bottom: 30px;
+        }
+    
+    }
     
 }
     
@@ -61,15 +70,7 @@
         
             
     }
-    .skills__item {
-        &:not(:nth-child(2n)) {
-            margin-right: 30px;
-        }
-        &:not(:nth-child(2n)) {
-            margin-bottom: 30px;
-        }
-    
-    }
+
 }
 
   
