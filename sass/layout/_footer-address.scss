@@ -71,7 +71,7 @@ font-style: normal;
     .footer-adress {
         margin-bottom: 60px; 
 }
-.footer-media {
+    .footer-media {
     margin-bottom: 60px;
 }
 }
@@ -83,7 +83,7 @@ font-style: normal;
         flex-wrap: wrap;
         align-items: baseline;
     }
-    .footer-subscribe {
+    .subscribe-footer__box{
         margin-top: 60px;
     }
     
@@ -102,9 +102,7 @@ font-style: normal;
         align-items: baseline;
         justify-content: space-between;
     }
-    .subscribe-foter__box {
-        display: flex;
-    }
+   
     .subscribe-section__subscribe-form-button {
         margin-left: 10px;
     }

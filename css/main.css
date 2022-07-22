@@ -125,8 +125,6 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  width: 528px;
-  height: 581px;
   background: var(--text-accent);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -168,6 +166,7 @@ a {
 .contact-form {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .contact-form-input-wrapper {
@@ -241,11 +240,11 @@ a {
 .contact-form-checkbox-label::before {
   display: block;
   content: "";
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 15px;
   cursor: pointer;
   border: 2px solid var(--text-font);
-  margin-right: 8px;
+  margin-right: 7px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 2px;
 }
@@ -254,7 +253,7 @@ a {
   justify-content: center;
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 30px;
 }
 
@@ -282,7 +281,7 @@ a {
 
 .text-contract {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
@@ -313,6 +312,28 @@ a {
   background: var(--header-botom-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+  .contact-form-checkbox-label::before {
+    width: 18px;
+    height: 18px;
+  }
+  .contact-form-checkbox-label {
+    font-size: 14px;
+  }
+  .text-contract {
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
@@ -1027,7 +1048,7 @@ a {
     flex-wrap: wrap;
     align-items: baseline;
   }
-  .footer-subscribe {
+  .subscribe-footer__box {
     margin-top: 60px;
   }
 }
@@ -1042,9 +1063,6 @@ a {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-  }
-  .subscribe-foter__box {
-    display: flex;
   }
   .subscribe-section__subscribe-form-button {
     margin-left: 10px;
@@ -1109,9 +1127,6 @@ a {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--text-accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .subscribe-section__subscribe-form-input {
@@ -1136,7 +1151,6 @@ a {
   color: var(--text-accent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -1159,15 +1173,20 @@ a {
     width: 450px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .subscribe-section__subscribe-text {
-    justify-content: flex-start;
+    text-align: center;
   }
+  .subscribe-section__subscribe-form-button {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
   .subscribe-section__subscribe-form-input {
     width: 358px;
   }
-  .footer-subscribe {
-    display: flex;
+  .subscribe-section__subscribe-form-button {
+    display: inline-flex;
   }
 }
 .section {
@@ -1267,7 +1286,7 @@ a {
   height: 100%;
   color: var(--text-accent);
   padding: 63px 24px;
-  overflow: auto;
+  overflow: hidden;
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
