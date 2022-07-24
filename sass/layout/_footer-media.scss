@@ -6,9 +6,7 @@
         text-transform: uppercase;
         margin-bottom: 20px;
         color: var(--text-accent);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        
 }
 .footer-media__join-media-footer {
         display: flex;
@@ -43,7 +41,11 @@
         fill: var(--text-accent);
    }
    @media screen and (max-width: 1199px) {
-
+    .footer-media__join-section-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .subscribe-section__subscribe-form-input {
         margin-bottom: 20px;
     }
@@ -53,6 +55,9 @@
         margin-right: auto;
     }
    }
+
+
+   
 // .footer-adress {
 //         margin-right: 70px;
 //         flex-grow: 1;

@@ -100,14 +100,21 @@ font-style: normal;
     .flex-container{
         display: flex;
         align-items: baseline;
-        justify-content: space-between;
+        
     }
    
     .subscribe-section__subscribe-form-button {
         margin-left: 10px;
     }
-  
+    .footer-adress {
+        margin-right: 70px;
+        
+       }
+       .subscribe-footer__box {
+        margin-left: 93px;
+    }
 }
+
 
    
 

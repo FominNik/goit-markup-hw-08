@@ -7,6 +7,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--text-font); 
+    
 }
 .skills__description {
     font-size: 14px;
@@ -14,6 +15,7 @@
     letter-spacing: 0.03em;
     color: var(--color-contact);
     margin-top: 10px;
+    
     
 
     &:not(:last-child) {
@@ -40,23 +42,18 @@
     .skills {
         gap: 30px;
     } 
+    .skills__text {
+        text-align: center;
+    }
 
 }
 @media screen and (min-width: 768px) {
-  
     .skills__item {
         flex-basis: calc((100% - 30px) / 2);
-    
-       
-        
-    }
-    .skills__item {
         &:not(:nth-child(2n)) {
             margin-right: 30px;
         }
-        &:not(:nth-child(2n)) {
-            margin-bottom: 30px;
-        }
+       
     
     }
     
@@ -66,20 +63,17 @@
     .skills {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        
-            
+        justify-content: center;    
+    }
+    .skills__item:not(:nth-child(n + 2)) {
+        margin-bottom: 30px;
     }
 
 }
 
   
 @media screen and (min-width: 1200px){
-    .item-section{
-        padding-top: 95px;
-        padding-bottom: 95px;
-    
-    }
+   
     .box {
     width: 270px;
     height: 120px;
